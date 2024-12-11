@@ -95,16 +95,33 @@ body {
       justify-content: space-evenly;
       section {
         display: flex;
-        align-items: flex-start;
         flex-direction: column;
-        padding-right: 40px;
-        &:last-of-type {
-          width: 400px;
-          align-items: center;
-        }
         ul {
-          &:last-of-type {
-            display: flex;
+          padding: 0;
+        }
+        &:first-of-type {
+          background-color: #346264;
+          h3 {
+            background-color: #102223;
+            margin: 0;
+            padding: 10px;
+          }
+          ul {
+            li {
+              img {
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+        &:last-of-type {
+          align-items: center;
+          background-color: #346264;
+          ul {
+            li {
+              display: flex;
+              justify-content: space-evenly;
+            }
           }
         }
       }
