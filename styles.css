@@ -1,4 +1,5 @@
 body {
+  background-color: black;
   h2,
   h3 {
     color: white;
@@ -28,41 +29,44 @@ body {
     }
   }
   main {
-    background-color: black;
+    width: 80%;
+    margin: auto;
     p {
       color: white;
     }
 
-    section#container_1 {
+    div.container_top {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: flex-start;
       section {
+        flex-direction: column;
         h2 {
           background-color: #346264;
-          padding-left: 20px;
+          width: calc(100% - 0.5em);
+          padding: 0.5em 0em 0.5em 0.5em;
           font-weight: initial;
         }
         &:first-of-type {
           display: flex;
-          flex-direction: column;
-          h2 {
-            width: 600px;
+          align-items: center;
+          width: 50%;
+          ul {
+            flex-wrap: wrap;
+            width: 25%;
           }
         }
         &:last-of-type {
           display: flex;
           flex-wrap: wrap;
-          width: 400px;
-          h2 {
-            width: 400px;
+          width: 40%;
+          ul {
+            flex-direction: column;
           }
         }
         ul {
           padding: 0;
           display: flex;
-          flex-wrap: wrap;
-          width: 800px;
 
           li {
             display: flex;
@@ -90,9 +94,10 @@ body {
         }
       }
     }
-    section#container_2 {
+    div.container_bot {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      padding-top: 2em;
       section {
         display: flex;
         flex-direction: column;
@@ -104,7 +109,7 @@ body {
           h3 {
             background-color: #102223;
             margin: 0;
-            padding: 10px;
+            padding: 0.5em;
           }
           ul {
             li {
@@ -116,11 +121,23 @@ body {
         }
         &:last-of-type {
           align-items: center;
-          background-color: #346264;
+
+          h3 {
+            width: 100%;
+            text-align: center;
+            background-color: #102223;
+            padding: 0.5em 0;
+            margin: 0;
+          }
           ul {
+            background-color: #346264;
+            margin: 0;
+
             li {
               display: flex;
               justify-content: space-evenly;
+              width: 400px;
+              padding: 20px;
             }
           }
         }
