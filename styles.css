@@ -70,12 +70,41 @@ body {
             &:not(.center) {
               width: 300px;
             }
-            p {
-              margin-right: 10px;
+            div {
+              p {
+                margin-right: 10px;
+                color: #346264;
+                &:first-of-type {
+                  font-size: 12px;
+                }
+              }
+              a {
+                font-size: 12px;
+                color: #6df2fc;
+              }
             }
             img {
               padding: 15px;
             }
+          }
+        }
+      }
+    }
+    section#container_2 {
+      display: flex;
+      justify-content: space-evenly;
+      section {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-right: 40px;
+        &:last-of-type {
+          width: 400px;
+          align-items: center;
+        }
+        ul {
+          &:last-of-type {
+            display: flex;
           }
         }
       }
