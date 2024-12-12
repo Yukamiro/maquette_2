@@ -78,7 +78,7 @@ body {
             display: flex;
             align-items: start;
             &:not(.center) {
-              width: 300px;
+              width: 50%;
             }
             div {
               p {
