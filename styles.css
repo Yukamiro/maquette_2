@@ -217,22 +217,39 @@ body {
     }
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 430px) {
   body {
     header {
       div {
+        justify-content: center;
         h1 {
+          font-size: 2em;
           padding-top: 1em;
-          width: 90%;
+          width: 60%;
         }
       }
     }
     main {
+      div.container_top {
+        section {
+          &:first-of-type {
+            ul {
+              flex-direction: column;
+              li {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
       div.container_bot {
         section {
           &:first-of-type {
             ul {
-              text-align: center;
+              align-content: center;
+              li {
+                text-align: center;
+              }
             }
           }
         }
